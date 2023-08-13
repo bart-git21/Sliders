@@ -1,0 +1,57 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel-scene {
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.wrap {
+    background: pink;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    transition: .5s linear;
+    padding: 5px;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 10%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow_to_right {
+    right: 15px;
+}
+
+.arrow_to_left {
+    left: 15px;
+    transform: rotate(180deg);
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    flex-shrink: 0;
+}
